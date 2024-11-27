@@ -10,9 +10,11 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_community.document_loaders import PyPDFLoader
 
 # Set OpenAI API key securely using Streamlit secrets
+os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
-!python -c "from huggingface_hub.hf_api import HfFolder; HfFolder.save_token('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')"
-os.environ["OPENAI_API_KEY"] = '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'
+# Set Hugging Face token securely using Streamlit secrets
+!python -c "from huggingface_hub.hf_api import HfFolder; HfFolder.save_token(st.secrets['HF_API_TOKEN'])"
+
 # Load the PDF and preprocess
 loader = PyPDFLoader("chat_bot_sponser_data.pdf")  # Replace with correct path to PDF
 pages = loader.load_and_split()
