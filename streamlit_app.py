@@ -13,7 +13,8 @@ from langchain_community.document_loaders import PyPDFLoader
 os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
 # Set Hugging Face token securely using Streamlit secrets
-!python -c "from huggingface_hub.hf_api import HfFolder; HfFolder.save_token(st.secrets['HF_API_TOKEN'])"
+from huggingface_hub import HfFolder
+HfFolder.save_token(st.secrets["HF_API_TOKEN"])
 
 # Load the PDF and preprocess
 loader = PyPDFLoader("chat_bot_sponser_data.pdf")  # Replace with correct path to PDF
