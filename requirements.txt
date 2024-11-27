@@ -1,0 +1,10 @@
+langchain
+langchain-text-splitters
+chromadb
+sentence-transformers
+torch
+pypdf
+streamlit
+langchain-openai
+huggingface_hub
+langchain-community
