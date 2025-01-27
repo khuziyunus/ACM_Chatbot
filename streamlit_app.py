@@ -142,7 +142,7 @@ llm  = ChatOpenAI(model="gpt-3.5-turbo", temperature=0.8)
 # Function to answer questions based on the provided PDF
 def answer_question(llm, user_question):
     # Create FAISS index
-    faiss_index = FAISS.from_documents(pages, OpenAIEmbeddings(model="text-embedding-3-small"))
+    faiss_index = FAISS.from_documents(documents, OpenAIEmbeddings(model="text-embedding-3-small"))
     docs = faiss_index.similarity_search(user_question, k=5)
 
     # Define the prompt for the LLM
