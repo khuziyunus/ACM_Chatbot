@@ -12,9 +12,6 @@ from langchain_community.document_loaders import PyPDFLoader
 # Set OpenAI API key securely using Streamlit secrets
 os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
-# Set Hugging Face token securely using Streamlit secrets
-from huggingface_hub import HfFolder
-HfFolder.save_token(st.secrets["HF_API_TOKEN"])
 
 documents = [
     {
