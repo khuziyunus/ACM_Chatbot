@@ -21,8 +21,11 @@ st.markdown("Ask any question about the ACM society, and I'll provide the most a
 uploaded_file = st.file_uploader("Upload the ACM society document (PDF):", type="pdf")
 if uploaded_file is not None:
     with st.spinner("Loading and splitting the PDF..."):
-        # Load and split the PDF
-        loader = PyPDFLoader(BytesIO(uploaded_file.read()))
+        # Read the uploaded file into memory
+        pdf_data = uploaded_file.read()
+
+        # Load the PDF from the in-memory data
+        loader = PyPDFLoader(BytesIO(pdf_data))
         pages = loader.load_and_split()
 
     # Initialize OpenAI embeddings
