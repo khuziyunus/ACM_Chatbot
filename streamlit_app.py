@@ -3,13 +3,11 @@
 
 import os
 import streamlit as st
-from langchain_community.embeddings.sentence_transformer import SentenceTransformerEmbeddings
-from langchain_community.vectorstores import FAISS
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
-from langchain_core.prompts import ChatPromptTemplate
-from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.docstore.document import Document
+from langchain_community.vectorstores import FAISS
+from langchain_core.prompts import ChatPromptTemplate
 
 # Set OpenAI API key securely using Streamlit secrets
 os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
@@ -52,7 +50,7 @@ Quizzes
 Speed programming
 Event Highlights
 Hackathon: Collaborative project introductions.
-Speed Programming: Solve algorithmic problems eciently.
+Speed Programming: Solve algorithmic problems efficiently.
 Game Development: Hands-on sessions for beginners.
 ICPC Pakistan
 The ACM International Collegiate Programming Contest (ICPC) is the oldest and most prestigious
@@ -84,7 +82,7 @@ Silver: PKR 200,000
 Bronze: PKR 100,000
 Incentives by Package
 Incentives Platinum Gold Silver Bronze
-Certicate of appreciation ✅ ✅ ✅ ✅
+Certificate of appreciation ✅ ✅ ✅ ✅
 Social media acknowledgement ✅ ✅ ✅ ✅
 Logo on guidebook ✅ ✅ ✅ ✅
 Logo on all event posters ✅ ✅ ✅ ✅
@@ -93,7 +91,7 @@ Company banners in venue ✅ ✅ ❌ ❌
 Pamphlets in gift bags ✅ ✅ ✅ ❌
 Logo on host team shirts ✅ ✅ ✅ ❌
 Naming rights to Softcom theme ✅ ❌ ❌ ❌
-Logo on guest certicates ✅ ✅ ❌ ❌
+Logo on guest certificates ✅ ✅ ❌ ❌
 Session in closing ceremony ✅ ❌ ❌ ❌
 Media coverage of company’s stall ✅ ❌ ❌ ❌
 Highlights of the Event
@@ -128,7 +126,7 @@ Instagram: @acm.giki
 # Initialize the LLM
 llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0.8)
 
-# Function to answer questions based on the provided PDF
+# Function to answer questions based on the provided data
 def answer_question(llm, user_question):
     text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=100,  # Adjust the chunk size as needed
