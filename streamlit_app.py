@@ -621,7 +621,7 @@ def answer_question(llm, user_question):
     return final_answer
 
 # Streamlit UI
-st.set_page_config(page_title="ACM GIKI Chapter Chatbot", layout="Centered")
+st.set_page_config(page_title="ACM GIKI Chapter Chatbot", layout="centered")
 
 # Compact Styles
 st.markdown("""
