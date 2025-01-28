@@ -189,5 +189,4 @@ user_question = st.text_input("Enter your query:")
 if user_question:
     with st.spinner("Generating response..."):
         response = answer_question(llm, user_question)
-        st.success("Here's the response:")
         st.write(response)
