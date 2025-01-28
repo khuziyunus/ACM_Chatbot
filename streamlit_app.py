@@ -14,7 +14,6 @@ from langchain.docstore.document import Document
 # Set OpenAI API key securely using Streamlit secrets
 os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
-
 # Data for the ACM GIKI Chapter
 data = '''GIKI Chapter
 Website
