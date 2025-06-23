@@ -62,4 +62,4 @@ The **ACM GIKI Chapter Chatbot** is a Streamlit-based web app that intelligently
 
 ## 💻 Live Preview
 
-[![ACM GIKI Chatbot UI](output/SampleOutput.png)](output/preview.png)
+[![ACM GIKI Chatbot UI](Output/SampleOutput.png)](output/preview.png)
