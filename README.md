@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <img src="https://acmgiki.com/assets/images/logo.png" alt="ACM GIKI Logo" width="120"/>
+  <img src="http://www.acmgiki.org/wp-content/uploads/2024/09/Presentation-by-Danish-Javed-1.png" alt="ACM GIKI Logo" width="120"/>
 </p>
 
 <p align="center"><b>🚀 Ask intelligent questions about ACM GIKI events, competitions, and history – get instant AI-powered responses.</b></p>
