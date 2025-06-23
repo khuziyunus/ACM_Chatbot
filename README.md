@@ -39,15 +39,7 @@ The **ACM GIKI Chapter Chatbot** is a Streamlit-based web app that intelligently
 | [Streamlit](https://streamlit.io) | Web-based interactive UI |
 | [OpenAI Embeddings](https://platform.openai.com/docs/guides/embeddings) | For turning chunks into vectors |
 
----
 
-## 📸 Demo
-
-> 🔗 **[Try the Chatbot Live](https://your-deployment-url)** *(Replace with your Streamlit deployment link)*
-
-![screenshot](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME/raw/main/screenshot.png)
-
----
 
 ## 🧪 How It Works
 
